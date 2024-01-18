@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+/* 하남다움체 */
+/* https://noonnu.cc/font_page/1144 */
+@font-face {
+    font-family: 'HANAMDAUM';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/HANAMDAUM.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+.del_main img{
+    margin-top: 20px;
+    width: 100%;
+}
+
+.anotherdel{
+    display: inline-block;
+    /* float: right; */
+    width: 100%;
+    margin-top: 3%;
+    font-size: 1.5rem;
+    background-color: #78A153;
+}
+
+.delspace{
+    display: flex;
+    /* Optional: If you want the list items to wrap to the next line if there's not enough horizontal space, use the following line */
+    /* flex-wrap: wrap; */
+    /* width: 50%; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.delspace li {
+    /* Add space between list items horizontally */
+    margin-right: 10px; /* You can adjust this value to control the spacing */
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+/* Optional: To align list items vertically in the middle */
+    display: flex;
+    line-height: 100%;
+}
+
+/* To remove the underlines from the anchor tags */
+.delspace li a {
+    text-decoration: none;
+    color: white;
+    padding-top: 4%;
+}
+
+#tab1{
+    margin: 0 auto;
+    margin-top: 60px;
+    text-align: center;
+}
+.innerm{margin-bottom: 30%;}
+.deltoptext{
+    margin-top: 3%;
+
+}
+.delguide{
+    font-weight: bold;
+    font-size: 2rem;
+}
+.clock{
+    width: 30%;
+    margin-top: 3%;
+}
+
+.dawn{width: 70%;}
+.delguide2{
+    margin-top: 5%;
+    font-size: 1.5rem;
+    margin-top: 5%;
+}
+.delbottext{
+    margin-top: 5%;
+    border-top: 3px dotted #999; /* 점선 스타일을 적용하고 색상을 지정합니다. */
+    padding-top: 30px; /* 점선 위에 약간의 간격을 두기 위해 상단 패딩을 추가합니다. */
+}
+.delseven{
+    margin-top: 5%;
+
+}
+.days{
+    /* margin-bottom: 5%; */
+    margin-top: 3%;
+    width: 50%;
+
+
+}
+.delarea{
+    margin-top: 5%;
+    /* color: black;
+    text-decoration: dotted; */
+}
+.delsearch{
+    background-color: #78A153;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5%;
+}
+.delsearch:hover{
+    background-color: #5a3a26;
+}
+.delbest{
+    margin-top: 6%;
+    margin-bottom: 15%;
+    border-top: 3px dotted #999; /* 점선 스타일을 적용하고 색상을 지정합니다. */
+    padding-top: 30px; /* 점선 위에 약간의 간격을 두기 위해 상단 패딩을 추가합니다. */
+}
+
+.delthree{
+    margin-top: 3%;
+    margin-bottom: 3%;
+    background-color: #78A153;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+}
+
+.del_info{
+    line-height: 3;
+    font-size: 1.6em;
+}

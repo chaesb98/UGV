@@ -1,0 +1,207 @@
+@charset "utf-8";
+
+ul, li{
+    list-style: none;
+}
+
+.board_contain{
+    background-color: whitesmoke;
+    width: 100%;
+    height: 800px;
+    transform: translateY(100px);
+    border-radius: 20px;
+    display: flex;
+}
+
+.board_contain .board_pic{
+    background: url(/public/images/board_pic.png) no-repeat center;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    border-radius: 20px 0 0 20px;
+}
+
+.board_contain .board_desc{
+    padding: 100px 70px;
+    width: 50%;
+    position: relative;
+}
+
+.board_contain .board_desc h2{
+    margin-bottom: 80px ; 
+}
+
+.board_contain .board_desc h3{
+    font-weight: bold;
+    margin-bottom: 100px;
+}
+
+.board_contain .board_desc ul{
+    width: 100%;
+    padding-left: 0;
+}
+
+.board_contain .board_desc ul li{
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.board_contain .board_desc ul li span{
+    display: block;
+    width: 80%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 24px;
+    text-align: left;
+}
+
+.board_contain .board_desc ul li a{
+    margin-left: 10%;
+}
+
+.board_contain .board_desc .board_more{
+    display: block;
+    width: 100px;
+    height: 50px;
+    background-color: #78a153;
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    bottom: 50px;
+    right: 70px;
+    font-size: 24px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.green{
+    color: #78a153;
+}
+
+.board_more:hover{
+    transition: all 0.5s;
+    background-color: #5a3a26 !important;
+}
+
+.boList{
+    position: relative;
+}
+
+.plusBtn{
+    width: 30px;
+   height: 30px;
+   position: absolute;
+   top: 0px;
+   right: 20px;
+   transform: rotate(0deg);
+   transition: all 0.5s;
+}
+.plusBtn::before{
+    content: "";
+   position: absolute;
+   width: 20px;
+   height: 2px;
+   background-color: #78a153;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+.plusBtn::after{
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: #78a153;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.plusBtn:hover{
+    transform: rotate(180deg);
+}
+.plusBtn:hover::after, .plusBtn:hover::before{
+    color: #5a3a26 !important;
+}
+
+@media (max-width: 1200px){
+    .board_contain{
+        height: 700px;
+    }
+    .board_contain .board_desc{
+        padding: 80px 60px;
+    }
+    .board_contain .board_desc h2{
+        margin-bottom: 60px;
+    }
+    .board_contain .board_desc h3{
+        margin-bottom: 70px;
+        font-size: 20px;
+    }
+    .board_contain .board_desc ul li{
+        margin-bottom: 30px;
+    }
+    .board_contain .board_desc ul li span{
+        font-size: 22px;
+    }
+    .board_contain .board_desc .board_more{
+        width: 90px;
+        height: 45px;
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 992px){
+    .board_contain{
+        transform: translateY(80px);
+        height: 650px;
+    }
+    .board_contain .board_desc{
+        padding: 70px 50px;
+    }
+    .board_contain .board_desc ul li a img{
+        width: 60%;
+    }
+    .board_contain .board_desc .board_more{
+        width: 80px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px){
+    .board_contain{
+        height: 880px;
+        transform: translateY(60px);
+        display: block;
+    }
+    .board_contain .board_pic{
+        width: 100%;
+        height: 50%;
+        border-radius: 20px 20px 0 0;
+    }
+    .board_contain .board_desc{
+        width: 100%;
+        height: 50%;
+        padding: 30px;
+    }
+    .board_contain .board_desc h2{
+        margin-bottom: 50px;
+    }
+    .board_contain .board_desc h3{
+        margin-bottom: 55px;
+    }
+    .board_contain .board_desc ul li:last-child{
+        display: none;
+    }
+    .board_contain .board_desc .board_more{
+        top: 110px;
+        right: 8%;
+    }
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+.one{
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+    margin-top: 130px;
+}
+
+.two{
+   font-size: 15px;
+   text-align: center;
+   padding: 80px;
+   line-height: 40px;
+   font-weight: bold;
+}
+
+.three{
+   text-align: center;
+   font-weight: bold;
+   padding: 30px;
+   font-size: 2.5rem;
+}
+
+.banner{
+    width: 100vw;
+ }
+
+.slick-slide img{
+    width: 70%;
+    margin-left: 16%;
+}
+
+.playerClass{
+    width: 100% !important;
+    height: 500px !important;
+}
+
+.player{
+    margin-bottom: 150px;
+}

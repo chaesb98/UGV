@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/* 눈누 스위트체 : https://noonnu.cc/font_page/1150 */
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 눈누 양진체 : https://noonnu.cc/font_page/330 */
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+hr{
+    border: 0 !important;
+    background: #5A3A26 !important;
+    height: 3px !important;
+    opacity: 1 !important;
+}
+
+.sub_text{
+    margin: 2rem;
+    box-sizing: border-box;
+    font-size: 1.3rem !important;
+}
+
+.center{
+    text-align: center;
+    width: 100%;
+}
+
+.location_common{
+    width: 100%;
+    height: 100%;
+    padding: 30px 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+
+.h1fbg{
+    background-color: #78a153;
+    text-shadow: -1px 0px #FAF1E4, 0px 1px #FAF1E4, 1px 0px #FAF1E4, 0px -1px #FAF1E4;
+    padding: 0.5rem;
+    text-align: center;
+    font-family: '양진체';
+}
+
+#map{
+    margin: 30px auto;
+    background: #ffffff;
+    width: 100%;
+    height: 60vh;
+    border: 3px solid #5A3A26 !important;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.location_information{
+    width: 100%;
+    padding: 50px;
+}
+
+.location_information h2{
+    font-family: '양진체';
+    text-align: center;
+}
+
+.location_information h2 small{
+    font-family: '양진체';
+    text-align: center;
+}
+
+.location_information h3{
+    font-family: 'SUITE-Regular';
+}
+
+.location_information h3 small{
+    font-family: 'SUITE-Regular';
+}
+
+.location_information_add{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-flow: wrap;
+    padding: 30px 0;
+    border-top: 3px solid #5A3A26;
+}
+
+.location_traffic{
+    /* 폭 100% 영역을 2개의 영역으로 구분 처리함 */
+    width: calc(100% / 2);
+    height: 100%;
+    padding: 50px;
+}
+
+.traffic_details{
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.traffic_details img{
+    width: 80px;
+    height: 80px;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.traffic_details h2{
+    font-family: '양진체';
+    margin-top: auto !important;
+}
+
+.traffic_details h2 small{
+    font-family: '양진체';
+}
+
+.company_image, .company_video{
+    width: 100%;
+    height: 100%;
+    padding: 50px 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    #map{
+        margin: 50px auto;
+    }
+    .location_traffic{
+        padding: 30px;
+    }
+    .location_common h1{
+        font-size: 2rem !important;
+    }
+    .location_information{
+        padding: 30px;
+    }
+    .location_information h2{
+        font-size: 1.7rem;
+    }
+    .location_information h3{
+        font-size: 1.5rem;
+    }
+    .traffic_details h2{
+        font-size: 1.7rem;
+    }
+    small{
+        font-size: 1.5rem !important;
+    }
+    .traffic_details img{
+        width: 80px;
+        height: 80px;
+    }    
+}
+
+@media (max-width: 991.98px) {
+    #map{
+        height: 40vh;
+    }
+    .location_information{
+        padding: 20px;
+    }
+    .location_traffic{
+        padding: 20px;
+    }
+    .location_information h1{
+        font-size: 1.7rem !important;
+    }
+    .location_information h2{
+        font-size: 1.5rem;
+    }
+    .location_information h3{
+        font-size: 1.3rem;
+    }
+    .traffic_details h2{
+        font-size: 1.5rem;
+    }
+    small{
+        font-size: 1.3rem !important;
+    }
+    .traffic_details img{
+        width: 70px;
+        height: 70px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    #map{
+        height: 40vh;
+    }
+    .location_traffic{
+        padding: 10px;
+    }
+    .location_information{
+        padding: 10px;
+    }
+    .location_common h1{
+        font-size: 1.5rem !important;
+    }
+    .location_information h2{
+        font-size: 1.3rem;
+    }
+    .location_information h3{
+        font-size: 1.1rem;
+    }
+    .traffic_details h2{
+        font-size: 1.3rem;
+        vertical-align: center !important;
+        height : 80px !important;
+        box-sizing: border-box;
+        margin-top: auto !important;
+    }
+    small{
+        font-size: 1.1rem !important;
+    }
+    .traffic_details img{
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width: 576px){
+    #map{
+        height: 30vh;
+        margin: 30px auto;
+    }
+    .location_traffic{
+        padding: 10px;
+    }
+    .location_common h1{
+        font-size: 1.3rem !important;
+    }
+    .location_information{
+        padding: 10px;
+    }
+    .location_information h2{
+        font-size: 1rem;
+    }
+    .location_information h3{
+        font-size: .7rem;
+    }
+    .traffic_details h2{
+        font-size: 1rem;
+        margin-top: 0;
+    }
+    small{
+        font-size: .7rem !important;
+    }
+    .traffic_details img{
+        width: 50px;
+        height: 50px;
+    }
+}

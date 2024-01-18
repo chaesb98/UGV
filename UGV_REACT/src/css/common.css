@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+
+.logo{
+    display: flex !important;
+    align-items: center !important;
+    height: 100px !important;
+    width: 200px !important;
+    margin-right: 5rem !important;
+}
+
+.logo img{
+    width: 80%;
+    /* border: 1px solid red; */
+}
+
+.nav-link{
+    font-size: 20px !important;
+    font-weight: bold !important;
+    margin-right: 1.5rem;
+    color: #5a3a26 !important;
+}
+
+.searchBtn{
+    width: 100px;
+    color: #5a3a26 !important;
+    border-color: #5a3a26 !important;
+}
+.searchBtn:hover{
+    background-color: #5a3a26 !important;
+    color: #FFA696 !important;
+}
+
+.me-2{
+    background-color: #F7F0DD !important;
+}
+
+.dropdown-menu{
+    background-color: #FBC6A4 !important;
+}
+
+.dropdown-menu a:hover{
+    background-color:  #F7F0DD !important;
+}
+
+#logoutText:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-bg-color{
+    /* background-color: #5a3a26; */
+    /* background-color: #d26a1b; */
+    /* background-color: #78a153; */
+    /* background-color: #a41d1a; */
+    background-color: #FBC6A4;
+    /* background-color: #ff7e5a; */
+    /* background-color: #dfe6e6; */
+    margin-bottom: 150px;
+}
+
+.dropdown-divider{
+    height: 1px !important;
+    background-color: #5a3a26 !important;
+}
+
+@media (max-width: 1400px){
+    .logo{
+        margin-right: 3rem !important;
+    }
+}
+
+@media (max-width: 1200px){
+    .logo{
+        margin-right: 0rem !important;
+    }
+    .nav-link{
+        font-size: 16px !important;
+    }
+}
+
+/* 미디어 쿼리 : 태블릿 992px 미만 적용 */
+/* 0.02px을 빼는 이유 = 브라우저는 현재 범위 컨텍스트 쿼리를
+지원하지 않으므로 더 높은 정밀도의 값을 사용하여 분수 너비
+(예 : 높은 dpi 기기의 특정 조건에서 발생할 수 있음)가 있는
+min- 및 max- 접두사 및 뷰포트의 제한 사항을 해결하기 위해서 입니다. */
+/* 초소형 세로폰 : 576px 미만, max-width: 575.98px */
+/* 소형 가로폰 : 768px 미만, max-width: 767.98px */
+/* 데스크톱 PC : 1200px 미만, max-width: 1199.98px */
+/* 대형 데스크탑 PC : 1400px 미만, max-width: 1399.98px */
+@media (max-width: 991.98px){
+    .logo img{
+        width: 200px;
+    }
+}

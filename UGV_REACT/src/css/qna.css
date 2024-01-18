@@ -1,0 +1,75 @@
+@charset "utf-8";
+
+/* 눈누 스위트체 : https://noonnu.cc/font_page/1150 */
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* 눈누 양진체 : https://noonnu.cc/font_page/330 */
+@font-face {
+    font-family: '양진체';
+    src: url('https://cdn.jsdelivr.net/gh/supernovice-lab/font@0.9/yangjin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.h1bg{
+
+    margin: 0 auto;
+    border-radius: 15px;
+    background-color: #d26a1b;
+    text-shadow: -1px 0px #FAF1E4, 0px 1px #FAF1E4, 1px 0px #FAF1E4, 0px -1px #FAF1E4;
+    padding: 1rem;
+    width: fit-content;
+    font-family: '양진체';
+}
+
+.red{
+    color: #a41d1a;
+    font-weight: bolder;
+}
+
+.margin{
+    margin-top: 150px;
+}
+
+.accordion_wrap{
+    padding: 50px;
+    margin-bottom: 150px;
+}
+
+.accordion-button{
+    font-weight: normal;
+    font-family: '양진체';
+    background-color: #78a153;
+}
+
+
+.accordion-body{
+    background-color: #FAF1E4;
+    font-weight: bold;
+    font-family: 'SUITE-Regular';
+    padding: 30px;
+}
+
+/* 
+리액트 부트스트랩 실행 웹사이트에서 요소 선택 확인 후
+아코디언 첫번째 제목 버튼 클릭 시 변화되는 배경색을 변경합니다.
+*/
+
+.accordion-button:not(.collapsed){
+    background-color: #5a3a26 !important;
+    color: #fff;
+    font-weight: normal;
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+}
+

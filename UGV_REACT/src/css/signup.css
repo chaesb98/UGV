@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* 눈누 - 스위트체 */
+@font-face {
+    font-family: 'SUITE-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/SUITE-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+#root{
+    font-family: 'SUITE-Regular';
+}
+
+.signup_header{
+    margin-top: 150px;
+}
+
+/* 로그인 */
+.signupText{
+    text-align: center;
+    /* font-family: 'SUITE-Regular'; */
+    /* font-size: 30px; */
+    font-weight: bold;
+    line-height: 1.5;
+    /* background-color: pink; */
+    /* width: 50%; */
+    /* margin-top: 50px; */
+    font-family: '';
+}
+
+#signup_div{
+    margin-top: 30px;
+}
+
+#signup_btn{
+    background-color: #78a153;
+    border: none;
+    width: 100%;
+}
+#signup_btn:hover{
+    background-color: #5a3a26;
+}
+.snsText p{
+    margin-top: 30px; /* 텍스트와 아이콘 사이의 간격 조정 */
+    text-align: center;
+    border-top: 3px dotted #999; /* 점선 스타일을 적용하고 색상을 지정합니다. */
+    padding-top: 30px; /* 점선 위에 약간의 간격을 두기 위해 상단 패딩을 추가합니다. */
+    font-size: 20px;
+}
+.signupmargin{
+    margin-bottom: 180px;
+}
