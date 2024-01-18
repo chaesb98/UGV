@@ -1,5 +1,5 @@
-## 🍅We Find Flower! (WFF)
-온라인 상품(꽃) 판매 반응형 웹
+## 🍅UGV (UGly Vegetable)
+못난이 야채 상품 판매 반응형 웹
 
 
 ![image](https://github.com/chaesb98/UGV/assets/141791594/f6be4d22-01c8-4f89-a5ef-861a2e8c7372)
